@@ -1,28 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>4K Interactive Space Background</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="dark" />
+    <title>Surajit Rana – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="space-canvas" aria-hidden="true"></canvas>
+    <div id="progress" aria-hidden="true"></div>
 
-<canvas id="space-canvas"></canvas>
+    <main>
+      <header class="hero">
+        <div class="hero-text">
+          <h1 id="head">Portfolio</h1>
+          <p id="name" role="heading" aria-level="2">Surajit<br />Rana</p>
+          <p class="lead">
+            I build interactive websites with
+            <span id="typed" class="typed"
+              >JavaScript, HTML, CSS, and React.</span
+            ><span class="caret" aria-hidden="true"></span>
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">See my projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="cue" aria-hidden="true"><span></span></div>
+      </header>
 
-<div class="content">
-    <div>
-        
-    </div>
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          I like making pages that respond to what people do. The starfield
+          behind this page is my own canvas animation: stars fly past while
+          meteors streak across the sky.
+        </p>
+      </section>
 
-    <div class="header">
-        <h1>PORTFOLIO</h1>
-        <h3>SURAJIT RANA</h3>
-    </div>
-    <p>WELLCOME TO MY PORTFOLIO</p>
-    
-</div>
+      <section id="skills">
+        <h2>What I work with</h2>
+        <ul class="chips">
+          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>React</li>
+          <li>State management</li>
+          <li>Canvas API</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </section>
 
-<script src="script.js"></script>
-</body>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Interactive space background</h3>
+            <p>
+              A canvas starfield with drifting nebulae, flying stars, and
+              meteors. It is the sky behind this page.
+            </p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>Canvas API</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Shop cart demo</h3>
+            <p>
+              A small store that shows state management in React. Add and remove
+              items, change quantities, and filter products while the cart total
+              stays in sync.
+            </p>
+            <ul class="tags">
+              <li>React</li>
+              <li>useState</li>
+              <li>Context</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Let’s talk</h2>
+        <p>
+          Have a project in mind, or want to talk code? Send me a message or
+          look through my work on GitHub.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:you@example.com">Email me</a>
+          <a
+            class="btn"
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View GitHub</a
+          >
+        </div>
+      </section>
+
+      <footer>© 2026 Surajit Rana</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
